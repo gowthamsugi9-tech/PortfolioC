@@ -1,0 +1,162 @@
+/* ═══════════════════════════════════════════════════
+   GOWTHAM R — PORTFOLIO  |  style2.css
+   Responsive breakpoints
+═══════════════════════════════════════════════════ */
+
+
+/* ── Tablet & below ─────────────────────────────── */
+@media (max-width: 900px) {
+
+    /* Project rows stack */
+    .project-container,
+    .project-reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .project-image img { width: 100%; max-width: 500px; }
+
+    .project-tags { justify-content: center; }
+
+    .project-content { max-width: 100%; }
+
+    .project-number { font-size: 48px; }
+
+    /* Certificates grid → 2 columns */
+    .certificate-container { grid-template-columns: repeat(2, 1fr); }
+
+    /* Skill wheel slightly smaller */
+    .gx-wheel-container { width: 300px; height: 300px; }
+    .gx-wheel-container::before { width: 260px; height: 260px; }
+    .gx-wheel-container:hover .gx-s1 { transform: translate(-50%,-50%) translate(120px,0); }
+    .gx-wheel-container:hover .gx-s2 { transform: translate(-50%,-50%) translate(84px,84px); }
+    .gx-wheel-container:hover .gx-s3 { transform: translate(-50%,-50%) translate(0,120px); }
+    .gx-wheel-container:hover .gx-s4 { transform: translate(-50%,-50%) translate(-84px,84px); }
+    .gx-wheel-container:hover .gx-s5 { transform: translate(-50%,-50%) translate(-120px,0); }
+    .gx-wheel-container:hover .gx-s6 { transform: translate(-50%,-50%) translate(-84px,-84px); }
+
+    .gx-wheel-center { width: 90px; height: 90px; }
+    .gx-wheel-center i { font-size: 30px; }
+    .gx-wheel-skill { width: 66px; height: 66px; }
+    .gx-wheel-skill i { font-size: 26px; }
+    #circle img {
+    width: 280px;
+    height: 280px;}
+}
+
+
+/* ── Mobile ─────────────────────────────────────── */
+@media (max-width: 768px) {
+    #circle img {
+    width: 280px;
+    height: 280px;}
+
+    :root { --nav-h: 60px; }
+
+    /* ─ Navbar ─ */
+    .navbar { padding: 0 24px; }
+
+    /* Hide regular nav links; show hamburger */
+    .nav-links {
+        position: fixed;
+        top: var(--nav-h); left: 0; right: 0;
+        background: rgba(8,8,8,0.97);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        border-bottom: 1px solid var(--card-border);
+        transition: max-height 0.45s var(--ease-out), padding 0.45s;
+    }
+
+    .nav-links.open {
+        max-height: 500px;
+        padding: 24px 0;
+    }
+
+    .nav-links li { width: 100%; text-align: center; }
+
+    .nav-links a {
+        display: block;
+        padding: 16px 0;
+        font-size: 15px;
+    }
+
+    .hamburger { display: flex; }
+
+    /* ─ Hero ─ */
+    .hero { padding: calc(var(--nav-h) + 30px) 24px 70px; }
+    #circle img { width: 140px; height: 140px; }
+    .hero-name { font-size: 2.8rem; }
+    .hero-title { font-size: 1.3rem; }
+    .hero-bio { font-size: 14px; padding: 0 10px; }
+
+    /* ─ Action bar ─ */
+    #action-bar { padding: 80px 24px; }
+    .action-btn { width: 100%; max-width: 320px; justify-content: center; }
+
+    /* ─ Skills ─ */
+    #gx-skill-wheel { padding: 80px 24px; }
+    .gx-wheel-container { width: 260px; height: 260px; }
+    .gx-wheel-container::before { width: 220px; height: 220px; }
+    .gx-wheel-center { width: 80px; height: 80px; }
+    .gx-wheel-center i { font-size: 26px; }
+    .gx-wheel-skill { width: 58px; height: 58px; }
+    .gx-wheel-skill i { font-size: 22px; }
+    .gx-wheel-container:hover .gx-s1 { transform: translate(-50%,-50%) translate(100px,0); }
+    .gx-wheel-container:hover .gx-s2 { transform: translate(-50%,-50%) translate(70px,70px); }
+    .gx-wheel-container:hover .gx-s3 { transform: translate(-50%,-50%) translate(0,100px); }
+    .gx-wheel-container:hover .gx-s4 { transform: translate(-50%,-50%) translate(-70px,70px); }
+    .gx-wheel-container:hover .gx-s5 { transform: translate(-50%,-50%) translate(-100px,0); }
+    .gx-wheel-container:hover .gx-s6 { transform: translate(-50%,-50%) translate(-70px,-70px); }
+
+    /* ─ Projects ─ */
+    #projects-section { padding: 80px 24px; }
+    .project-image img { max-width: 100%; }
+
+    /* ─ Academic ─ */
+    #academic-section { padding: 80px 24px; }
+    .academic-card { padding: 22px 22px 22px 56px; }
+    .academic-timeline-dot { left: 14px; }
+    .academic-container::before { left: 22px; }
+    .academic-content h3 { font-size: 20px; }
+
+    /* ─ Certificates ─ */
+    #certificate-section { padding: 80px 24px; }
+    .certificate-container { grid-template-columns: 1fr; }
+
+    /* ─ General section titles ─ */
+    .projects-title,
+    .academic-title,
+    .certificate-title,
+    .gx-wheel-title {
+        font-size: 2rem;
+    }
+
+    i { font-size: 24px; }
+}
+
+
+/* ── Small mobile ───────────────────────────────── */
+@media (max-width: 480px) {
+    #circle img {
+    width: 280px;
+    height: 280px;}
+
+    .hero-name  { font-size: 2.2rem; }
+    .hero-title { font-size: 1.1rem; }
+    .btn        { padding: 11px 22px; font-size: 13px; }
+
+    .gx-wheel-container { width: 230px; height: 230px; }
+
+    .project-number { font-size: 40px; }
+
+    .academic-card { flex-direction: column; }
+
+    /* Certificates single column already set above */
+    .certificate-card img { height: 180px; }
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gowtham R — Frontend Developer</title>
+
+    <!-- Google Fonts: Cormorant Garamond (display) + Outfit (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style2.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <a class="logo1" href="#">GR</a>
+
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#" class="nav-item" data-label="Home">Home</a></li>
+            <li><a href="#aboutmesection" class="nav-item" data-label="About">About</a></li>
+            <li><a href="#gx-skill-wheel" class="nav-item" data-label="Skills">Skills</a></li>
+            <li><a href="#projects-section" class="nav-item" data-label="Projects">Projects</a></li>
+            <li><a href="#academic-section" class="nav-item" data-label="Education">Education</a></li>
+            <li><a href="#action-bar" class="nav-item" data-label="Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+    <section class="hero" id="home">
+        <!-- Animated grain overlay -->
+        <div class="hero-grain"></div>
+        <div class="overlay" id="overlay"></div>
+
+        <!-- Profile image — centred above text -->
+        <div id="circle" class="hero-avatar reveal-up">
+            <img src="/portfolioimaged/file_00000000d30471faa70bffa8ac0dade7 (1).png" alt="Gowtham R">
+        </div>
+
+        <div class="hero-content reveal-up" style="--delay:.15s">
+            <span class="hero-eyebrow">Hello, I'm</span>
+            <h1 class="hero-name">Gowtham <em>R</em></h1>
+            <h2 class="hero-title" style="color: beige;">Frontend Developer</h2>
+            <p class="hero-bio" style="color: aliceblue;">
+                I craft responsive, user-friendly web experiences with HTML, CSS, JavaScript &amp; Python.
+                Passionate about clean code and visually compelling digital products.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects-section" class="btn btn-primary">View Work</a>
+                <a href="#action-bar" class="btn btn-ghost">Get In Touch</a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ ACTION / CONTACT BAR ═══════════════════════════════ -->
+    <section id="action-bar">
+        <div class="section-label reveal-up">Reach Out</div>
+        <h2 class="section-title reveal-up" style="--delay:.1s">Let's Connect</h2>
+
+        <div class="action-container reveal-up" style="--delay:.2s">
+            <a href="/portfolioimaged/R Gowtham_Resume.pdf" download class="action-btn resume-btn">
+                <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+            <a href="mailto:gowthamsugi8@gmail.com?subject=Portfolio%20Contact&body=Hello%20Gowtham,%20I%20saw%20your%20portfolio." class="action-btn">
+                <i class="fa-solid fa-envelope"></i> Email Me
+            </a>
+            <a href="https://www.linkedin.com/in/gowtham-r-695280241" target="_blank" class="action-btn">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/gowthamsugi9-tech/ucart-shopping" target="_blank" class="action-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+    <section class="hero about-section" id="aboutmesection">
+        <div class="overlay" style="opacity:0.55;"></div>
+        <div class="hero-content reveal-up">
+            <span class="hero-eyebrow">Who I Am</span>
+            <h1 class="hero-name">Web <em>Developer</em></h1>
+            <p class="hero-bio" style="color: aliceblue;">
+                I have hands-on experience building responsive and user-friendly websites using HTML, CSS,
+                JavaScript, and Python. I am passionate about creating clean, efficient, and visually appealing
+                digital experiences — and I continuously improve my skills to stay aligned with industry trends.
+            </p>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ SKILLS ═══════════════════════════════ -->
+    <section id="gx-skill-wheel">
+        <div class="section-label reveal-up">What I Know</div>
+        <h2 class="gx-wheel-title reveal-up" style="--delay:.1s">Skills</h2>
+        <p class="skill-tagline reveal-up" style="--delay:.15s">HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; JavaScript &nbsp;·&nbsp; Python &nbsp;·&nbsp; SQL &nbsp;·&nbsp; Power BI</p>
+        <p class="skill-sub reveal-up" style="--delay:.2s">
+            Strong academic background — 7.96 CGPA with no history of arrears, reflecting dedication and consistency.
+        </p>
+
+        <!-- Skill Wheel -->
+        <div class="gx-wheel-container reveal-up" style="--delay:.25s" id="skillWheel">
+            <div class="gx-wheel-center">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <div class="gx-wheel-skill gx-s1" data-tip="HTML5">
+                <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="gx-wheel-skill gx-s2" data-tip="CSS3">
+                <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="gx-wheel-skill gx-s3" data-tip="JavaScript">
+                <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="gx-wheel-skill gx-s4" data-tip="Python">
+                <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="gx-wheel-skill gx-s6" data-tip="Power BI">
+                <i class="fa-solid fa-chart-area"></i>
+            </div>
+            <div class="gx-wheel-skill gx-s5" data-tip="SQL">
+                <i class="fa-solid fa-database"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
+    <section id="projects-section">
+        <div class="section-label reveal-up">What I've Built</div>
+        <h2 class="projects-title reveal-up" style="--delay:.1s">My Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project-container reveal-left">
+            <div class="project-image">
+                <img src="/portfolioimaged/ecommerce.png" alt="E-Commerce Website">
+                <div class="project-image-glow"></div>
+            </div>
+            <div class="project-content">
+                <span class="project-number">01</span>
+                <h3>E-Commerce Website</h3>
+                <p>A fully functional e-commerce platform built with HTML, CSS, JavaScript and a Python backend.
+                Features product listing, cart system and payment options.</p>
+                <div class="project-tags">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span>
+                </div>
+                <a href="https://ucart-shopping.netlify.app/" target="_blank" class="project-btn">
+                    View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-container project-reverse reveal-right">
+            <div class="project-image">
+                <img src="/portfolioimaged/ecommerce2.png" alt="Perfume Store">
+                <div class="project-image-glow"></div>
+            </div>
+            <div class="project-content">
+                <span class="project-number">02</span>
+                <h3>Perfume Store</h3>
+                <p>An e-commerce website built with HTML, CSS, and JavaScript for a perfume brand.
+                Features dynamic UI and fully responsive design.</p>
+                <div class="project-tags">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <a href="https://cube-assignments.netlify.app/" target="_blank" class="project-btn">
+                    View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ ACADEMIC ═══════════════════════════════ -->
+    <section id="academic-section">
+        <div class="section-label reveal-up">My Path</div>
+        <h2 class="academic-title reveal-up" style="--delay:.1s">Academic Journey</h2>
+
+        <div class="academic-container">
+
+            <div class="academic-card reveal-up" style="--delay:.05s">
+                <div class="academic-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="academic-timeline-dot"></div>
+                <div class="academic-year">2021 – 2025 &nbsp;|&nbsp; CGPA 7.96</div>
+                <div class="academic-content">
+                    <h3>Bachelor's Degree <span class="badge">No Arrears</span></h3>
+                    <p>Undergraduate degree with a strong focus on data analysis, programming and system design.</p>
+                </div>
+            </div>
+
+            <div class="academic-card reveal-up" style="--delay:.1s">
+                <div class="academic-icon"><i class="fa-solid fa-school"></i></div>
+                <div class="academic-timeline-dot"></div>
+                <div class="academic-year">2019 – 2021 &nbsp;|&nbsp; 90% (HSC)</div>
+                <div class="academic-content">
+                    <h3>Higher Secondary Education</h3>
+                    <p>Graduated with strong academic performance and a deep interest in technology and computer science.</p>
+                </div>
+            </div>
+
+            <div class="academic-card reveal-up" style="--delay:.15s">
+                <div class="academic-icon"><i class="fa-solid fa-certificate"></i></div>
+                <div class="academic-timeline-dot"></div>
+                <div class="academic-year">Full Stack Course</div>
+                <div class="academic-content">
+                    <h3>Technical Certifications</h3>
+                    <p>Completed certifications in Python, Web Development, and Database tools.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ CERTIFICATES ═══════════════════════════════ -->
+    <section id="certificate-section">
+        <div class="section-label reveal-up">Proof of Work</div>
+        <h2 class="certificate-title reveal-up" style="--delay:.1s">Certifications</h2>
+
+        <div class="certificate-container">
+
+            <div class="certificate-card reveal-up" style="--delay:.05s">
+                <div class="certificate-img-wrap">
+                    <img src="/portfolioimaged/sqludemy.jpg" alt="SQL Bootcamp Certificate">
+                    <div class="certificate-overlay">
+                        <a href="https://www.udemy.com/certificate/UC-00f79a6d-3a5c-4c6e-b81e-7c3875c10ae5/" target="_blank" class="cert-view-btn">
+                            <i class="fa-solid fa-eye"></i> View
+                        </a>
+                    </div>
+                </div>
+                <div class="certificate-info">
+                    <h3>SQL Bootcamp</h3>
+                    <a href="https://www.udemy.com/certificate/UC-00f79a6d-3a5c-4c6e-b81e-7c3875c10ae5/" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <div class="certificate-card reveal-up" style="--delay:.1s">
+                <div class="certificate-img-wrap">
+                    <img src="/portfolioimaged/Tcs ion Gowtham.jpg" alt="TCS NQT Certificate">
+                    <div class="certificate-overlay">
+                        <a href="https://drive.google.com/file/d/15PTGhLgBYv9lZdohmFNb-NlQ6p8YyBqL/view?usp=drivesdk" target="_blank" class="cert-view-btn">
+                            <i class="fa-solid fa-eye"></i> View
+                        </a>
+                    </div>
+                </div>
+                <div class="certificate-info">
+                    <h3>TCS National Qualifiers Test</h3>
+                    <a href="https://drive.google.com/file/d/15PTGhLgBYv9lZdohmFNb-NlQ6p8YyBqL/view?usp=drivesdk" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <div class="certificate-card reveal-up" style="--delay:.15s">
+                <div class="certificate-img-wrap">
+                    <img src="/portfolioimaged/powerbi.png" alt="Data Visualisation Certificate">
+                    <div class="certificate-overlay">
+                        <a href="https://drive.google.com/file/d/1TyCSu32lkrM7YJTAGPFqROSLpsYIEBOm/view?usp=drivesdk" target="_blank" class="cert-view-btn">
+                            <i class="fa-solid fa-eye"></i> View
+                        </a>
+                    </div>
+                </div>
+                <div class="certificate-info">
+                    <h3>Data Visualisation</h3>
+                    <a href="https://drive.google.com/file/d/1TyCSu32lkrM7YJTAGPFqROSLpsYIEBOm/view?usp=drivesdk" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+    <footer class="site-footer">
+        <p>Designed &amp; Built by <strong>Gowtham R</strong></p>
+        <p class="footer-sub">© 2025 — All Rights Reserved</p>
+    </footer>
+
+    <!-- Easter Egg -->
+    <a href="/Egg.html" id="secret-trigger" title="🥚">🥚</a>
+
+    <!-- Script -->
+    <script src="/script.js"></script>
+</body>
+</html>
